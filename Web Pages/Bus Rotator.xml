@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Advertisements>
+	<Ad>
+		<ImageURL>Images/AC Low Floor 1.jpg</ImageURL>
+		<AlternateText>DTC AC Bus</AlternateText>
+	</Ad>
+
+	<Ad>
+		<ImageURL>Images/AC Low Floor 2.jpg</ImageURL>
+		<AlternateText>DTC AC Bus</AlternateText>
+	</Ad>
+
+	<Ad>
+		<ImageURL>Images/Low Floor 1.jpg</ImageURL>
+		<AlternateText>DTC Bus</AlternateText>
+	</Ad>
+
+	<Ad>
+		<ImageURL>Images/Low Floor 2.jpg</ImageURL>
+		<AlternateText>DTC Bus</AlternateText>
+	</Ad>
+
+	<Ad>
+		<ImageURL>Images/Low Floor 3.jpg</ImageURL>
+		<AlternateText>DTC Bus</AlternateText>
+	</Ad>
+
+	<Ad>
+		<ImageURL>Images/UP Bus.jpg</ImageURL>
+		<AlternateText>UP Bus</AlternateText>
+	</Ad>
+</Advertisement>

@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Bus.master.cs" Inherits="Master_Pages_MasterPage" %>
+
+<%@ Register src="~/User Control Pages/Noida Portal Main.ascx" tagname="Noida" tagprefix="uc1" %>
+<%@ Register src="~/User Control Pages/Menu Bar.ascx" tagname="Menu" tagprefix="uc2" %>
+<%@ Register src="~/User Control Pages/Bus Sub Menu.ascx" tagname="BusMenu" tagprefix="uc3" %>
+
+
+<%--<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+    <script runat="Server" type="text/C#">  
+    [System.Web.Services.WebMethod]  
+    [System.Web.Script.Services.ScriptMethod]  
+    public static AjaxControlToolkit.Slide[] GetImages()  
+    {  
+        return new AjaxControlToolkit.Slide[] {   
+        //new AjaxControlToolkit.Slide("~/Images/Bus/AC Low Floor 1.jpg", "DTC AC Bus", "Runs in Delhi & NCR"),  
+        new AjaxControlToolkit.Slide("~/Images/Bus/AC Low Floor 2.jpg", "DTC AC Bus", "Runs in Delhi & NCR"),  
+        new AjaxControlToolkit.Slide("~/Images/Bus/Low Floor 1.jpg", "DTC Bus", "Runs in Delhi & NCR"),  
+        new AjaxControlToolkit.Slide("~/Images/Bus/Low Floor 2.jpg", "DTC Bus", "Runs in Delhi & NCR"), 
+        new AjaxControlToolkit.Slide("~/Images/Bus/Low Floor 3.jpg", "DTC Airline Bus", "Runs to Airport Route"), 
+        new AjaxControlToolkit.Slide("~/Images/Bus/UP Bus.jpg", "UP Bus", "Runs in UP")};  
+    }
+
+</script>--%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+  
+
+</head>
+<body>
+    <form id="form1" runat="server">
+<!-- start of user control tags -->
+<div id="home">
+    <uc1:Noida ID="Noida" runat="server" />
+</div>
+
+<div id="menu_bar">
+    <uc2:Menu ID="Menu" runat="server" />
+</div>
+
+<div id="sub_menu">
+    <uc3:BusMenu ID="Bus" runat="server" />
+</div>
+<!-- end of user control tags -->
+
+   <%-- <asp:Image ID="img_slide" runat="server" Height="200" Style="border: 1px solid black; width:300" ImageUrl="~/Images/Bus/AC Low Floor 1.jpg" AlternateText="DTC AC Bus" />
+    <asp:SlideShowExtender ID="slideshowextend1" runat="server" TargetControlID="img_slide" SlideShowServiceMethod="GetImages" AutoPlay="true" Loop="true" />--%>
+   
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+             
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <asp:ScriptManager ID="ToolkitScriptManager1" runat="server"> </asp:ScriptManager>
+
+    </form>
+</body>
+</html>

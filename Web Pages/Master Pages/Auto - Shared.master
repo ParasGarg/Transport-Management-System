@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Auto - Shared.master.cs" Inherits="Master_Pages_MasterPage" %>
+
+
+<%@ Register src="~/User Control Pages/Noida Portal Main.ascx" tagname="Noida" tagprefix="uc1" %>
+<%@ Register src="~/User Control Pages/Menu Bar.ascx" tagname="Menu" tagprefix="uc2" %>
+<%@ Register src="~/User Control Pages/Auto Sub Menu.ascx" tagname="AutoMenu" tagprefix="uc3" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<form id="form1" runat="server">
+        
+<!-- start of user control tags -->
+<div id="home">
+    <uc1:Noida ID="Noida" runat="server" />
+</div>
+
+<div id="menu_bar">
+    <uc2:Menu ID="Menu" runat="server" />
+</div>
+
+<div id="sub_menu">
+    <uc3:AutoMenu ID="Auto" runat="server" />
+</div>
+<!-- end of user control tags -->
+
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <asp:ScriptManager ID="ToolkitScriptManager1" runat="server"> </asp:ScriptManager>
+
+    </form>
+</body>
+</html>
